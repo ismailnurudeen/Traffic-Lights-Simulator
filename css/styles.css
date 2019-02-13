@@ -1,4 +1,124 @@
+:root{
+ --fs:3rem;
+ --bg:radial-gradient(#fff, rgba(0,0,0,0.3));
+ --bg2:radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+ 
+}
+*{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 body
 {
-  font-size: 40pt;
+background:var(--bg2);
+font-size:3rem;
+height:100%;
+background-repeat:no-repeat;
 }
+.instruction{
+  font-family:tahoma;
+  font-size:6rem;
+  font-weight:200;
+  text-align:center;
+  margin:20px auto;
+  margin-bottom:0;
+  transition:all 5s ease-in;
+}
+
+.time{
+  font-size:3rem;
+  text-align:center;
+  margin-bottom:3rem;
+}
+.ease-note{
+  font-size:2.5rem;
+  font-weight:200;
+  text-align:center;
+  margin:3rem 5rem 0rem;
+}
+
+.base{
+  display:flex;
+  border:3px solid Black;
+  justify-content:center;
+  flex-direction:column;
+  padding:1rem;
+  margin:10px auto;
+  width:6rem;
+  border-radius:10px;
+  box-shadow:5px 10px 30px rgba(10,10,10,0.6);
+}
+.ball{
+  height:6rem;
+  width:6rem;
+  border-radius:50%;
+  flex:1;
+  margin-bottom:10px;
+  transition:all 1.5s ease-out;
+  border:2px solid #333;
+  opacity:0.8;
+}
+
+.red-ball{
+  background:Red;
+  animation:red-light 1s infinite ease-in-out;
+  animation-delay:2s;
+}
+
+.green-ball{
+  //background:Green;
+ // border:3px groove green;
+  animation:green-light 2s infinite ease-in-out;
+  animation-delay:1s;
+}
+
+.orange-ball{
+ // background:orange;
+  // border:3px solid Orange;
+ animation:orange-light 3s infinite ease-in-out;
+ animation-delay:1s;
+}
+.on{
+  box-shadow:0px 0px 20px 20px rgba(255,255,255,0.85);
+}
+
+.ctrl{
+  width:100%;
+  text-align:center;
+  padding:20px;
+}
+.ctrl button{
+  padding:10px;
+  width:65px;
+}
+
+
+/*@keyframes red-light{
+  50%{
+	background:var(--bg);
+  }
+  100%{
+	background:red;
+  }
+}
+@keyframes green-light{
+  5%{
+	background:#fafafa;
+  }
+  100%{
+	background:green;
+  }
+}
+
+@keyframes orange-light{
+  5%{
+	background:#fafafa;
+  }
+  100%{
+	background:Orangered;
+  }
+}
+*/
+
+
